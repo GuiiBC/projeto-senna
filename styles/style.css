@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+
+@media screen and (max-width: 720px) and (max-height: 1080px) {
+
+    body {
+        font-size: 10px; /* Reduzir o tamanho da fonte do corpo */
+    }
+
+    .conteudo-principal-main {
+        width: 90%;
+        max-width: 90%;
+        text-align: justify;
+    }
+
+    .conteudo-principal-main-titulo {
+        font-size: 2rem;
+    }
+
+    .conteudo-principal-main-paragrafo {
+        font-size: -1rem;
+    }
+
+    .conteudo-principal-main-links-container {
+        flex-direction: column;
+    }
+
+    .conteudo-principal-main-links {
+        font-size: 0.9rem;
+        padding: 2.5em 1em;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/assets/senna2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.800);
+    background-blend-mode: multiply;
+}
+
+.cabecalho {
+    display: flex;
+    padding: 0.6% 0 0 10%;
+}
+
+.cabecalho-home-imagem {
+    display: flex;
+    height: 8vh;
+    transition: all 0.3s ease; /* Adicionando uma transição suave para animar as mudanças */
+    border: 0.2em solid transparent; /* Definindo uma borda transparente por padrão */
+
+}
+
+.cabecalho-home-imagem:hover {
+    height: 8.1vh;
+    transform: scale(1.1);
+}
+
+.conteudo-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.conteudo-principal-main {
+    width: 90%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.5);
+}
+
+strong {
+    color: yellow;
+}
+
+.conteudo-principal-main-titulo-container {
+    text-align: center;
+}
+
+.conteudo-principal-main-titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.conteudo-principal-main-paragrafo {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.28rem;
+}
+
+.conteudo-principal-main-links-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bebas Neue', sans-serif;
+    gap: 0em;
+    margin-top: 3em;
+}
+
+.conteudo-principal-main-links {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px;
+    color: white;
+    font-size: 50px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.conteudo-principal-main-links:hover {
+    transition: all 0.3s ease;
+    background: linear-gradient(25deg, rgb(94, 241, 89), rgb(72, 250, 66));
+    background-clip: text;
+    color: transparent;
+}
+
